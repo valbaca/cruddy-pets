@@ -1,0 +1,18 @@
+### Start with two pets in DB from the main()
+GET http://localhost:8080/pets
+
+### Show just one pet
+GET http://localhost:8080/pets/1
+
+
+### Upload one more via REST
+POST http://localhost:8080/pets
+Content-Type: application/json
+
+{
+  "name": "Charlie",
+  "age": 14
+}
+
+### Verify it's been added
+GET http://localhost:8080/pets
